@@ -161,6 +161,9 @@ obj_fnct2 := wl_max - wl_min
 ! print runtime
 setparam("XPRS_VERBOSE", 1)
 
+! maxtime = 500 seconds
+setparam("XPRS_MAXTIME", 500)
+
 minimise(0.6*obj_fnct + 0.4*obj_fnct2)
 
 
