@@ -1,11 +1,14 @@
 The files in this document are the following:
 
+The files of the data cleaning and synthesis process:
 1. Data Preprocessing and Aggregation: Jupyter Notebook of all data aggregation, cleaning, and formatting 
+
+The main model and its input:
 2. NewData.txt : The new input data for the initial mosel model and the second python model
 3. Tutor_Allocation.mos : The mosel file which contains the initial allocation problem that optimises fairness and preferences subject to constraints
 4. Second_model_tutor_dropout : The python notebook which contains the second part of the model that can alter allocations without re running the whole problem
 
-The following are the csv files of the output from the initial mosel file used in the second model
+The csv files of the output from the initial mosel file used in the second model
 5. each_tutors_hours.csv : The number of hours worked by each tutor
 6. tutor_assignments.csv : The tutors assigned to courses at each timeslot t
 7. updated_availibility.csv : The updated matrix which is 1 if the tutor is availible at timeslot t and 0 otherwise, based on allocation from initial model
@@ -13,4 +16,4 @@ The following are the csv files of the output from the initial mosel file used i
 8. Tradeoff Calculation Outputs : A file containing the outputs from the different objective functions of different P1 and P2 values
 In the format each_tutor_hours_P1_{i}_P2_{j}.csv , where i is P1 = weight on preference value and j is P2 = weight on fairness value
 
-The following are the files of the data cleaning and synthesis process
+
